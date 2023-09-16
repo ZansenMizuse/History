@@ -1,0 +1,128 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Flag.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+ 
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1{
+    font-size: 34px;/*Mengatur Ukuran Font*/
+    color: aliceblue;/*Mengatur Warna Font*/
+    font-family: 'Times New Roman', Times, serif;/* Jenis Fony uang digunakan*/
+}
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+    
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+/* Mengatur tampilan kolom form */
+.Kolom {
+    max-width: 500px; /* Lebar maksimum dari kolom form */
+    margin: 20px auto; /* Jarak dari tepi halaman */
+    padding: 20px; /* Ruang dalam kolom form */
+    border: 1px solid #ccc; /* Border dengan warna abu-abu muda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang transparan */
+
+    border-radius: 10px; /* Sudut melengkung pada border */
+}
+
+/* Mengatur tampilan label di atas input/select/textarea */
+label {
+    display: block; /* Mengatur label agar tampil dalam blok terpisah */
+    margin-bottom: 5px; /* Jarak dari bawah label ke elemen berikutnya */
+    font-weight: bold; /* Membuat teks label menjadi tebal */
+}
+
+/* Mengatur tampilan input teks dan select */
+input[type="text"], select {
+    width: 100%; /* Lebar 100% dari wadahnya */
+    padding: 10px; /* Ruang dalam elemen */
+    margin-bottom: 10px; /* Jarak dari bawah elemen ke elemen berikutnya */
+    border: 1px solid #ccc; /* Border dengan warna abu-abu muda */
+    border-radius: 5px; /* Sudut melengkung pada border */
+}
+
+/* Mengatur tampilan radio button */
+input[type="radio"] {
+    margin-right: 5px; /* Jarak dari elemen berikutnya */
+}
+
+/* Mengatur tampilan textarea */
+textarea {
+    width: 100%; /* Lebar 100% dari wadahnya */
+    padding: 10px; /* Ruang dalam elemen */
+    margin-bottom: 10px; /* Jarak dari bawah elemen ke elemen berikutnya */
+    border: 1px solid #ccc; /* Border dengan warna abu-abu muda */
+    border-radius: 5px; /* Sudut melengkung pada border */
+}
+
+/* Mengatur tampilan tombol */
+button {
+    background-color: #333; /* Warna latar belakang tombol */
+    color: white; /* Warna teks pada tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung pada border */
+    cursor: pointer; /* Tampilan kursor menjadi tanda tangan saat diarahkan ke tombol */
+}
+
+/* Mengatur tampilan tombol reset */
+button[type="reset"] {
+    background-color: #606060; /* Warna latar belakang tombol reset */
+    margin-left: 10px; /* Jarak dari tombol sebelah kiri */
+}

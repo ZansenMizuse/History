@@ -1,0 +1,177 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Bg-MainPG.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+ 
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1{
+    font-size: 34px;/*Mengatur Ukuran Font*/
+    color: aliceblue;/*Mengatur Warna Font*/
+    font-family: 'Times New Roman', Times, serif;/* Jenis Fony uang digunakan*/
+}
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+    
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+/* Mengatur tampilan kotak konten dengan tata letak flex */
+.konten {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: flex-start; /* Mengatur penempatan elemen dalam kontainer flex ke bagian atas */
+    margin: 20px; /* Margin di sekitar kotak konten */
+    padding: 20px; /* Padding di dalam kotak konten */
+}
+
+/* Mengatur tampilan profil dengan tata letak flex */
+.profile {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Mengatur penempatan elemen dalam kontainer flex menjadi di tengah secara vertikal */
+    gap: 20px; /* Jarak antara elemen di dalam profil */
+}
+
+/* Mengatur gambar profil */
+.profile img {
+    max-width: 150px; /* Lebar maksimum gambar adalah 150 piksel */
+    height: auto; /* Tinggi gambar disesuaikan agar aspek rasio tetap terjaga */
+    margin-right: 10px; /* Margin kanan pada gambar */
+}
+
+/* Membuat garis pemisah pertama */
+.divider {
+    width: 100%; /* Lebar garis pemisah adalah 100% dari lebar kotak konten */
+    height: 1px; /* Tinggi garis pemisah adalah 1 piksel */
+    background-color: #333; /* Warna latar belakang garis pemisah */
+    margin: 10px 0; /* Margin di atas dan bawah garis pemisah */
+}
+
+/* Membuat garis pemisah kedua */
+.divider2 {
+    width: 650px; /* Lebar garis pemisah kedua adalah 650 piksel */
+    height: 1px; /* Tinggi garis pemisah adalah 1 piksel */
+    background-color: #333; /* Warna latar belakang garis pemisah */
+    margin: 10px 0; /* Margin di atas dan bawah garis pemisah */
+}
+
+/* Mengatur tampilan tabel */
+table {
+    border-collapse: collapse; /* Menggabungkan batas sel tabel yang bersebelahan */
+    width: 100%; /* Lebar tabel adalah 100% dari lebar kotak konten */
+}
+
+/* Mengatur sel dalam tabel */
+td {
+    padding: 5px 10px; /* Padding dalam sel tabel */
+    border: none; /* Tidak ada batas di sekitar sel tabel */
+}
+
+/* Mengatur gaya teks pada elemen h2 */
+h2 {
+    font-size: 30px; /* Ukuran font 30 piksel untuk elemen h2 */
+}
+
+/* Mengatur gaya teks pada elemen h3 */
+h3 {
+    font-size: 24px; /* Ukuran font 24 piksel untuk elemen h3 */
+}
+
+/* Mengatur gaya teks pada sel tabel dan elemen p */
+td, p {
+    font-size: 19px; /* Ukuran font 19 piksel untuk sel tabel dan elemen p */
+}
+
+/* Mengatur tampilan daftar bernomor */
+.numbered-list {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Mengatur pembungkusan pada elemen-elemen daftar */
+    list-style: none; /* Menghilangkan gaya default daftar bernomor */
+    padding: 0; /* Menghilangkan padding pada daftar */
+}
+
+/* Mengatur gaya elemen daftar bernomor */
+.numbered-list li {
+    width: 34%; /* Lebar elemen daftar bernomor */
+    padding: 5px; /* Padding pada elemen daftar */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar elemen */
+    font-size: 20px; /* Ukuran font 20 piksel untuk elemen daftar */
+}
+
+/* Mengatur gaya tautan dalam daftar bernomor */
+.numbered-list a {
+    text-decoration: none; /* Menghilangkan dekorasi tautan */
+    color: black; /* Warna teks tautan */
+}
+
+/* Mengatur gaya teks pada elemen dengan kelas .small-link */
+.small-link {
+    font-size: 20px; /* Ukuran font 20 piksel untuk elemen dengan kelas .small-link */
+}
+/* Gaya untuk kontainer tombol */
+.btn-container {
+    text-align: center; /* Pusatkan isi kontainer secara horizontal */
+    margin-top: 20px; /* Margin atas untuk ruang kosong */
+}
+
+/* Gaya untuk tombol */
+.btn {
+    background-color: #333; /* Warna latar belakang tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    border: none; /* Tanpa batas tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Tampilan kursor saat diarahkan */
+    text-decoration: none; /* Tanpa garis bawah pada teks tombol */
+}

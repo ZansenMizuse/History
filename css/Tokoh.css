@@ -1,0 +1,136 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Bg-MainPG.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */    
+
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1 {
+    font-size: 34px; /* Mengatur Ukuran Font */
+    color: aliceblue; /* Mengatur Warna Font */
+    font-family: 'Times New Roman', Times, serif; /* Jenis Font yang digunakan */
+}
+
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif; /* Mengatur Jenis Font */
+}
+
+/* untuk mengatur tampilan kontainer utama */
+.container {
+    display: flex; /* Menggunakan flexbox layout */
+    flex-wrap: wrap; /* Konten akan pindah baris jika tidak cukup lebar */
+    justify-content: center; /* Konten akan diatur di tengah secara horizontal */
+    align-items: center; /* Konten akan diatur di tengah secara vertikal */
+    height: 100vh; /* Kontainer akan mengisi tinggi viewport */
+}
+
+/* untuk mengatur tampilan baris (row) */
+.row {
+    display: flex; /* Menggunakan flexbox layout */
+    justify-content: space-between; /* Membuat jarak ruang antara kolom seimbang */
+    width: 100%; /* Lebar baris akan mengisi seluruh lebar kontainer */
+    padding: 10px; /* Memberikan jarak dari tepi kontainer */
+}
+
+/* untuk mengatur tampilan kolom (column) */
+.column {
+    flex: 1; /* Kolom akan mengambil ruang yang tersedia secara merata */
+    text-align: center; /* Teks dalam kolom akan diatur rata tengah */
+    padding: 10px; /* Memberikan jarak di dalam kolom */
+    max-width: 18%; /* Maksimum lebar kolom adalah 18% dari lebar kontainer */
+    border: 0.2px solid grey;/*Membuat border garis solid*/
+}
+.column-btn {
+    flex: 1; /* Kolom akan mengambil ruang yang tersedia secara merata */
+    text-align: center; /* Teks dalam kolom akan diatur rata tengah */
+    max-width: 18%; /* Maksimum lebar kolom adalah 18% dari lebar kontainer */
+}
+
+/* untuk mengatur tampilan gambar di dalam kolom */
+.column img {
+    max-width: 60%; /* Maksimum lebar gambar adalah 100% dari lebar kolom */
+    height: 60%; /* Tinggi gambar akan diatur otomatis sesuai rasio aspek */
+    border: 2px solid black;/*Membuat border garis solid*/
+}
+/* untuk mengatur font h2 di dalam kolom */
+.column h2{
+    font-size: 28px;/* Ukuran font */
+    padding-bottom: 3px;/* Mengatur padding-bottom (ruang bagian bawah)*/
+}
+
+.view-button:hover {
+    background-color: #007bffc5; /* Warna latar belakang tombol saat hover */
+}
+
+.view-button:active {
+    box-shadow: 0 5px #007bff9a; /* Efek bayangan saat tombol ditekan */
+    transform: translateY(4px); /* Pergeseran tombol ke bawah saat ditekan */
+}
+/*untuk mengatur tombol "Lihat" */
+.view-button {
+    padding: 10px 20px; /* Memberikan jarak padding pada tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks pada tombol */
+    border: none; /* Tanpa border */
+    border-radius: 20px; /* Mengatur sudut melengkung pada tombol */
+    cursor: pointer; /* Tampilan cursor menjadi tanda tangan saat diarahkan ke tombol */
+    text-decoration: none; /* Tidak ada garis bawah pada teks tombol */
+    display: block; /* Membuat tombol menjadi blok sehingga lebar dapat diatur */
+    margin-top: 10px; /* Memberikan jarak dari atas */
+    font-size: 17px;/* Ukuran font*/
+}

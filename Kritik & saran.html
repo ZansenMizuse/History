@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Kritik.css">
+    <link rel="icon" type="image/png" href="Image/Vector/garuda.png">
+    <title>Kritik & Saran</title>
+</head>
+<body>
+    <header>
+        <div class="Navigation">
+            <img src="Image/Vector/garuda.png" alt="Garuda" title="Garuda Pancasila">
+            <h1>Kritik & Saran</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Halaman awal</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                <li><a href="Kritik & saran.html">Kritik & saran</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="Kolom">
+        <form action="AfterMessage.html" method="post">
+          <h3>Silahkan Isi Form ini jika anda Ingin Memberikan Kritik atau saran</h3>
+          <br>
+  
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required style="max-width: 300px;">
+          
+          <label for="kelas">Kelas:</label>
+          <select id="kelas" name="kelas" required style="max-width:100px;">
+            <option value="A">X</option>
+            <option value="B">XI</option>
+            <option value="C">XII</option>         
+          </select> 
+  
+          <label for="Jurusan">Jurusan:</label>
+          <input type="text" id="Jurusan" name="Jurusan" required style="max-width: 200px;">
+  
+          <label for="email">Alamat E-mail:</label>
+          <input type="text" id="email" name="email" required style="max-width: 200px;"> 
+  
+          <label>Jenis Kelamin:</label>
+          <label><input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>Laki-laki</label>
+          <label><input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>Perempuan</label>
+      
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" rows="4" required></textarea>
+      
+          <button type="submit">Kirim</button>
+          <button type="reset">Reset</button>
+        </form>
+        </div>       
+</body>
+</html>

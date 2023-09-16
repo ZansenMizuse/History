@@ -1,0 +1,97 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Bg-MainPG.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+ 
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1{
+    font-size: 34px;/*Mengatur Ukuran Font*/
+    color: aliceblue;/*Mengatur Warna Font*/
+    font-family: 'Times New Roman', Times, serif;/* Jenis Fony uang digunakan*/
+}
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+    
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+/* Gaya untuk elemen 'ol' (ordered list) dan 'strong' */
+ol, strong {
+    color: black; /* Warna teks hitam */
+    font-size: 20px; /* Ukuran font 20 piksel */
+}
+
+/* Gaya untuk judul level 3 */
+h3 {
+    text-align: justify; /* Teks rata kanan dan kiri */
+    font-size: 21px; /* Ukuran font 21 piksel */
+}
+/* Gaya untuk kontainer tombol */
+.btn-container {
+    text-align: center; /* Pusatkan isi kontainer secara horizontal */
+    margin-top: 20px; /* Margin atas untuk ruang kosong */
+}
+
+/* Gaya untuk tombol */
+.btn {
+    background-color: #333; /* Warna latar belakang tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    border: none; /* Tanpa batas tombol */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Tampilan kursor saat diarahkan */
+    text-decoration: none; /* Tanpa garis bawah pada teks tombol */
+}

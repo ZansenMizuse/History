@@ -1,0 +1,124 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Flag.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+ 
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1{
+    font-size: 34px;/*Mengatur Ukuran Font*/
+    color: aliceblue;/*Mengatur Warna Font*/
+    font-family: 'Times New Roman', Times, serif;/* Jenis Fony uang digunakan*/
+}
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+    
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+
+/* Pengaturan bagian utama konten */
+.MainColumn {
+    text-align: center; /* Teks rata tengah */
+    transform: translate(-50%, -50%); /* Pusatkan elemen secara horizontal dan vertikal */
+    position: absolute; /* Posisi absolut relatif terhadap parent */
+    top: 50%; /* Letakkan elemen di tengah vertikal */
+    left: 50%; /* Letakkan elemen di tengah horizontal */
+    background-color: rgba(255, 255, 255, 0.7); /* Warna latar belakang dengan transparansi */
+    padding: 20px; /* Padding di dalam kontainer */
+    border-radius: 20px; /* Sudut melengkung pada elemen */
+    text-align: center; /* Teks rata tengah */
+}
+
+.MainColumn h1{
+    font-size: 34px;/* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+.MainColumn h2{
+    font-size: 26px;/* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+
+/* Pengaturan ukuran logo di bagian utama */
+.LogoKolom {
+    max-width: 20%; /* Lebar maksimum gambar logo */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin: 0 auto; /* Pusatkan gambar secara horizontal di dalam kontainer */
+}
+
+/* Pengaturan tombol "Masuk" */
+.start-button {
+    margin-top: 20px; /* Spasi atas tombol */
+    padding: 15px 30px; /* Padding tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 10px; /* Sudut melengkung pada tombol */
+    cursor: pointer; /* Ganti kursor saat di atas tombol */
+    font-size: 18px; /* Ukuran font tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    display: inline-block; /* Membuat tombol menjadi elemen blok */
+}
+
+.start-button:hover {
+    background-color: #007bffc5; /* Warna latar belakang tombol saat hover */
+}
+
+.start-button:active {
+    box-shadow: 0 5px #007bff9a; /* Efek bayangan saat tombol ditekan */
+    transform: translateY(4px); /* Pergeseran tombol ke bawah saat ditekan */
+}

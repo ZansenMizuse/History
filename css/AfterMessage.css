@@ -1,0 +1,120 @@
+/* Pengaturan margin dan padding default untuk elemen-elemen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Latar belakang halaman utama */
+body {
+    background-image: url(Flag.jpg); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran window */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membekukan gambar latar belakang saat menggulir */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    height: 100vh; /* Mengatur tinggi body sebesar 100% dari viewport height */
+}
+
+/* Bagian header (navigasi) */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks di header */
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen di header secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+ 
+}
+
+/* Pengaturan tampilan teks dan gambar di navigasi */
+.Navigation {
+    display: flex;
+    align-items: center;
+}
+
+.Navigation h1{
+    font-size: 34px;/*Mengatur Ukuran Font*/
+    color: aliceblue;/*Mengatur Warna Font*/
+    font-family: 'Times New Roman', Times, serif;/* Jenis Fony uang digunakan*/
+}
+/* Pengaturan gambar di navigasi */
+.Navigation img {
+    max-width: 80px; /* Lebar maksimum gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsional */
+    margin-right: 10px; /* Margin kanan untuk spasi */
+}
+
+/* Pengaturan daftar navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan tanda bullet dari daftar */
+}
+
+nav ul li {
+    display: inline; /* Membuat tautan sejajar */
+    margin-left: 20px; /* Spasi antara tautan */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghilangkan margin kiri pada tautan pertama */
+}
+
+/* Pengaturan tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: white; /* Warna teks tautan */
+    
+}
+
+/* Pengaturan font daftar navigasi */
+ul li {
+    font-size: 19px; /* Mengatur ukuran font */
+    font-family: 'Times New Roman', Times, serif;/* Mengatur Jenis Font */
+}
+
+/* Mengatur tampilan kontainer setelah pengiriman pesan */
+.kontainer {
+    max-width: 600px; /* Lebar maksimum dari kontainer */
+    margin: 20px auto; /* Jarak dari tepi halaman */
+    padding: 20px; /* Ruang dalam kontainer */
+    border: 1px solid #ccc; /* Border dengan warna abu-abu muda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    border-radius: 10px; /* Sudut melengkung pada border */
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang transparan */
+}
+
+/* Mengatur tampilan judul kontainer */
+.kontainer h2 {
+    line-height: 0px; /* Menghapus jarak antara baris untuk judul */
+    text-align: center; /* Teks judul di tengah */
+    margin-bottom: 20px; /* Jarak dari bawah judul ke konten berikutnya */
+}
+
+/* Mengatur tampilan teks kontainer */
+.kontainer p {
+    text-align: center; /* Teks di tengah */
+    font-size: 18px; /* Ukuran font teks */
+}
+
+/* Mengatur tampilan gambar kontainer */
+.kontainer img {
+    max-width: 30%; /* Maksimum lebar gambar adalah 30% dari lebar kontainer */
+    height: auto; /* Tinggi gambar akan diatur otomatis sesuai rasio aspek */
+    display: block; /* Mengatur gambar agar berada di tengah */
+    margin: 0 auto; /* Memberikan jarak dari atas dan bawah serta mengatur horisontal ke tengah */
+}
+
+/* Mengatur tampilan container untuk tombol */
+.btn-container {
+    text-align: center; /* Tombol di tengah */
+    margin-top: 20px; /* Jarak dari atas tombol ke konten di atasnya */
+}
+
+/* Mengatur tampilan tombol */
+.btn {
+    background-color: #333333; /* Warna latar belakang tombol */
+    color: white; /* Warna teks pada tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung pada border */
+    cursor: pointer; /* Tampilan cursor menjadi tanda tangan saat diarahkan ke tombol */
+    text-decoration: none; /* Tidak ada garis bawah pada teks tombol */
+}
